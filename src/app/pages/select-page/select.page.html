@@ -1,0 +1,62 @@
+<ion-content>
+  <h2>Tell us more about yourself...</h2>
+  <ion-searchbar class="search-bar" (ionInput)="getItems($event)" placeholder="Type in your joys here..."></ion-searchbar>
+  
+  <div class="grid-style">
+    <ion-grid>
+      <ion-row style="text-align: center">
+        <div button="true" (click)="selectJoy(joy)" *ngFor="let joy of joys">
+          <ion-card class="card-style">
+            <ion-card-content>
+              <ion-row>
+                <img class="icon" [src]="joy.icon" />
+                <p class="tag-text">{{ joy.name }}</p>
+              </ion-row>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+
+  <!--<ion-card class="search-list">
+    <ion-list>
+      <ion-item button="true" (click)="selectJoy(joy)" *ngFor="let joy of joys">
+        <ion-avatar item-start>
+          <img [src]="joy.icon" />
+        </ion-avatar>
+        <ion-label class="list-item">{{joy.name}}</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card>-->
+
+  <app-add-joy></app-add-joy>
+
+  <h2> Selected Joys </h2>
+
+  <!--<ion-grid>
+    <ion-row>
+      <ion-card class="card-tiles" *ngFor="let joy of selectedJoys">
+        <ion-card-content>{{ joy.name }}</ion-card-content>
+      </ion-card>
+    </ion-row>
+  </ion-grid>-->
+
+  <div class="grid-style">
+    <ion-grid>
+      <ion-row style="text-align: center">
+        <div *ngFor="let joy of selectedJoys">
+          <ion-card class="card-style">
+            <ion-card-content>{{ joy.name }}</ion-card-content>
+          </ion-card>
+        </div>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <ion-row justify-content-center>  
+    <button size="small" color="secondary" (click)="submitJoys()">Proceed</button>
+  </ion-row>
+
+</ion-content>

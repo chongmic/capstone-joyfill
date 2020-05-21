@@ -1,0 +1,24 @@
+<div class="centered">
+  <form (ngSubmit)="onSubmit()">
+    <ion-row>
+
+      <p id="joy-label">Enter a Joy</p>
+      <input placeholder="What makes you happy?" [(ngModel)]="joy.name" name="name" id="joy-input">
+
+      <p id="category-label">Select a Category</p>
+      <select [(ngModel)]="joy.category" id="dropdown" name="category">
+        <option value="" disabled selected>Select an option</option>
+        <option value="Sports">Sports</option>
+        <option value="Gaming">Gaming</option>
+        <option value="Arts">Arts</option>
+        <option value="Social">Social</option>
+        <option value="Leisure">Leisure</option>
+        <option value="Custom">Custom</option>
+      </select>
+  
+      <!--<ion-input placeholder="Enter Input" [(ngModel)]="joy.category"
+      name="category"></ion-input>-->
+      <button id="button-style" type="submit">Add It</button>
+    </ion-row>
+  </form>  
+</div>

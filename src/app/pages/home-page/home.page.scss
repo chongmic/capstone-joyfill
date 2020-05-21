@@ -1,0 +1,15 @@
+.center-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+#welcome-text {
+    font-size: 3vw;
+    white-space: nowrap;
+    margin-bottom: 7vw;
+    color: #062745;
+}

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,300i,400,400i,500,600,700,800,900&display=swap');
+
+ion-content {
+    --background: #99CFFF;
+    div {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+ion-card {
+    margin: 14vw 15vw 0 15vw;
+    border-radius: 15px;
+}
+
+ion-input[type="text"] {
+    font-size: 2.5em;
+}
+
+ion-button {
+    margin-top: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5vw;
+    height: 3vw;
+    width: 10vw;
+    display: block;
+    --border-radius: 50px;
+}
+
+mat-grid-list {
+    margin-top: -75px;
+    margin-bottom: -75px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5vw;
+    text-align: center;
+    font-weight: 500;
+    color: white;
+    margin-bottom: -6vw;
+}
+
+.first-name {
+    margin-top: 10vw;
+    margin-right: 5vw;
+    background: white;
+    border-radius: 50px;
+    font-size: 2vw;
+    border: 0;
+    width: 25vw;
+    height: 4vw;
+    padding-left: 2vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.last-name {
+    margin-top: 10vw;
+    background: white;
+    border-radius: 50px;
+    font-size: 2vw;
+    border: 0;
+    width: 25vw;
+    height: 4vw;
+    padding-left: 2vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+textarea:focus, 
+input:focus,
+button:focus{
+    outline: none;
+}
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;/*NEW*/
+}

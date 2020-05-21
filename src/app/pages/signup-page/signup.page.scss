@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,300i,400,400i,500,600,700,800,900&display=swap');
+
+ion-content {
+    font-family: 'Montserrat', sans-serif;
+}
+
+ion-card {
+    margin: 10vw 34vw 0 34vw;
+    border-radius: 15px;
+}
+
+ion-card-title {
+    width: 100%; 
+    text-align: center;
+    padding-top: 25px;
+    font-size: 25px;
+}
+
+ion-card-header {
+    background-color: #201F6C;
+
+}
+
+ion-button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8vw;
+    display: block;
+    --border-radius: 50px;
+}
+
+ion-item {
+    --highlight-color-focused: none;
+}
+
+.input-boxes {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20vw;
+    display: block;
+    padding-bottom: 25px;
+}
+
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 150px;
+}
+
+.error-message {
+    text-align: center;
+}
+
+.success-message {
+    text-align: center;
+}
+
+.validation-errors {
+    text-align: center;
+}
+
+#result {
+    display: block;
+    text-align: center;
+}
+
+#redirect {
+    width: 100%; 
+    text-align: center;
+    padding-bottom: 25px;
+    white-space: nowrap;
+}

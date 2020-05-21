@@ -1,0 +1,22 @@
+{
+    "nodes": [
+        {"id": 1, "name": "Eric Nam", "value": 120, "group": 1, "icon": "https://i.ibb.co/QMv9XdY/circle-cropped-1.png"},
+        {"id": 2, "name": "Kevin Chiu", "value": 87, "group": 1, "icon": "https://i.ibb.co/H7MMSKf/circle-cropped-1.png"},
+        {"id": 3, "name": "Anthony Chiang", "value": 76, "group": 1, "icon": "https://i.ibb.co/Kmhv5g1/circle-cropped.png"},
+        {"id": 4, "name": "Sean Kim", "value": 75, "group": 1, "icon": "https://i.ibb.co/SV3jQcr/circle-cropped-2.png"},
+        {"id": 5, "name": "Moses Chong", "value": 87, "group": 1, "icon": "https://i.ibb.co/jz2VhfB/circle-cropped-5.png"},
+        {"id": 6, "name": "Bill Gates", "value": 60, "group": 1, "icon": "https://i.ibb.co/HrcXCcJ/circle-cropped.png"},
+        {"id": 7, "name": "James Kim", "value": 63, "group": 1, "icon": "https://i.ibb.co/bB2WKRz/circle-cropped-4.png"},
+        {"id": 8, "name": "Justin Park", "value": 52, "group": 1, "icon": "https://i.ibb.co/frrK8Lq/circle-cropped-3.png"}
+    ],
+    "links": [
+        {"source": 0, "target": 1, "strength": 1},
+        {"source": 0, "target": 2, "strength": 0.1},
+        {"source": 0, "target": 3, "strength": 0.2},
+        {"source": 0, "target": 4, "strength": 0.3},
+        {"source": 0, "target": 5, "strength": 0.4},
+        {"source": 5, "target": 6, "strength": 0.5},
+        {"source": 5, "target": 7, "strength": 0.6},
+        {"source": 5, "target": 8, "strength": 0.7}
+    ]
+}

@@ -1,0 +1,17 @@
+<ion-content padding>
+  <div>
+    <div class="centered">
+      <h1>Please enter your name...</h1>
+      <form class="form" [formGroup]="userInfoForm" (ngSubmit)="onNext(userInfoForm.value)">
+        
+        <ion-row>
+          <input class="first-name" placeholder="First Name" required type="text" formControlName="firstName">
+          <input class="last-name" placeholder="Last Name" required type="text" formControlName="lastName">
+        </ion-row>
+  
+        <ion-button  expand="block" type="submit" [disabled]="!userInfoForm.valid">Next</ion-button>
+  
+      </form>
+    </div>
+  </div>
+</ion-content>

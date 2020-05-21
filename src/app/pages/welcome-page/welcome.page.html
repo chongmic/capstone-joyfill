@@ -1,0 +1,164 @@
+<ion-content class="content">
+
+  <header>
+    <div class="toolbar">
+      <img class="logo-image" alt="JoyFill Logo" src="../../assets/logo2.0.png"/>
+      <div class="action-buttons">
+        <button id="login" (click)="navigateToLoginPage()">Login</button>
+        <button id="sign-up" (click)="navigateToSignupPage()">Create an account</button>
+      </div>
+    </div>
+  </header>
+
+  <mat-grid-list cols="2" class="description-section">
+    <mat-grid-tile style="height: calc(100 - 5vw)">
+      <div>
+        <h1 id="slogan">
+          <b>Social Media As<br/>It Should Be</b>
+        </h1>
+        <div id="sub-description">
+          Joyfill is a social media application that cultivates happiness into people's lives by helping you evaluate 
+          and invest in joys with the people you care about.
+          <ion-row id="joy-submit">
+            <input class= "joy-input" placeholder="What makes you happy?">
+            <button class="joy-button" type="submit">Submit</button>
+          </ion-row>
+        </div>
+      </div>
+    </mat-grid-tile>
+
+    <mat-grid-tile style="height: calc(100 - 5vw)">
+      <div>
+        <img class="cover-img" alt="Cover Image" src="../../assets/cover-img.png"/>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  <div class="key-features">
+    <div class="key-section-header">
+      <h1 class="section-header">Key Features</h1>
+    </div>
+
+    <mat-grid-list cols="2" rowHeight="2:1" class="section-style">
+      <mat-grid-tile>
+        <div class="feature-header">
+          <img class="number" src="../../../assets/number-1.png">
+          List Your Joys
+          <p id="feature-sub">
+            Find what truly brings happiness to yourself and your closest friends. 
+            Document them to be mindful of your values and understand what social needs need to be met.
+          </p>
+        </div>
+      </mat-grid-tile>
+  
+      <mat-grid-tile>
+        <img class="screen-graphic" src="../../../assets/joy-list.png">
+      </mat-grid-tile>
+  
+      <mat-grid-tile>
+        <img class="card-graphic" src="../../../assets/card-graphic.png">
+      </mat-grid-tile>
+  
+      <mat-grid-tile>
+        <div class="feature-header">
+          <img class="number" src="../../../assets/number-2.png">
+          Fulfill Your Desires
+          <p id="feature-sub-secondary">
+            Commit to activities that are meaningful to you and be reminded to complete them.
+          </p>
+        </div>
+      </mat-grid-tile>
+  
+      <mat-grid-tile>
+        <div class="feature-header">
+          <img class="number" src="../../../assets/number-3.png">
+          Share Your Joys
+          <p id="feature-sub">
+            Share your joys with your connections and capture the moments that matter.
+          </p>
+        </div>
+      </mat-grid-tile>
+      
+      <mat-grid-tile>
+        <img class="screen-graphic" src="../../../assets/profile-graphic.png">
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+
+  <div class="footer-content">
+    <div id="team-section-header">
+      <h1 class="section-header">Meet the Team</h1>
+    </div>
+  
+    <mat-grid-list cols="4" class="team-section">
+      <mat-grid-tile>
+        <div class="item">
+          <img class="team-members" src="../../assets/team-members/anthony.png">
+          <p class="caption">
+            <b>Anthony Chiang</b>
+          </p>
+          <p id="sub">
+            Software Developer
+          </p>
+          <p id="joys">
+            PUBG | Badminton | Coding
+          </p>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <div class="item">
+          <img class="team-members" src="../../assets/team-members/kevin.png">
+          <p class="caption">
+            <b>Kevin Chiu</b>
+          </p>
+          <p id="sub">
+            UI/UX Designer
+          </p>
+          <p id="joys">
+            Board Games | Music | Design
+          </p>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <div class="item">
+          <img class="team-members" src="../../assets/team-members/moses.png"/>
+          <p class="caption">
+            <b>Moses Chong</b>
+          </p>
+          <p id="sub">
+            Software Developer
+          </p>
+          <p id="joys">
+            Sneakers | Family | Friends
+          </p>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <div class="item">
+          <img class="team-members" src="../../assets/team-members/sean.png">
+          <p class="caption">
+            <b>Sean Kim</b>
+          </p>
+          <p id="sub">
+            Project Manager
+          </p>
+          <p id="joys">
+            Church | Sports | Staying In
+          </p>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  
+    <footer>
+      <div class="footer-container">
+        <div class="copyright">
+          Joyfully made by Anthony Chiang, Moses Chong, Kevin Chiu, and Sean Kim<br>
+          This project is part of the iSchool Capstone Project
+        </div>
+        <div class="capstone-container">
+          <img class="capstone-logo" src="../../assets/capstone.png">
+        </div>
+      </div>
+    </footer>
+  </div>
+</ion-content>

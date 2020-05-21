@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,300i,400,400i,500,600,700,800,900&display=swap');
+
+.content {
+  background-color: white;
+  display: block;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+}
+/*************************************************************
+
+                          TOOLBAR
+
+**************************************************************/
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: #99CFFF;
+  padding-top: 2vw;
+}
+
+.logo-image {
+  margin-left: 5vw;
+  width: 13vw;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5vw;
+  padding-bottom: 1.5vw;
+}
+
+.toolbar button {
+  border-radius: 50px;
+  border: 0px;
+  padding: 13px 33px 13px;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ee5367;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.toolbar button:hover {
+  background-color: #d84f61;
+  color: #062745;
+}
+
+#login {
+  background-color: Transparent;
+  color: #062745;
+  font-size: 1.5vw;
+  padding: 0.5vw;
+  margin-right: 1vw;
+}
+
+#sign-up {
+  color: white;
+  font-size: 1.5vw;
+  white-space: nowrap;
+}
+
+.joy-input {
+  background: white;
+  width: 25vw;
+  padding-left: 2vw;
+  border-radius: 50px;
+  font-size: 1.3vw;
+  border: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.joy-button {
+  margin-left: 2vw;
+  width: 10vw;
+  font-weight: 600;
+  font-size: 1.5vw;
+  height: 3vw;
+  padding: -1vw;
+  border-radius: 50px;
+  white-space: nowrap;
+  color: white;
+  background-color: #ee5367;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#joy-submit button:hover {
+  background-color: #d84f61;
+  color: #062745;
+}
+
+ion-item {
+  width: 25vw;
+  font-size: 0.9em;
+  --border-radius: 30px;
+}
+
+#login:hover {
+  color: white;
+}
+
+/*************************************************************
+
+                          CONTENT
+
+**************************************************************/
+.cover-img {
+  width: 35vw;
+  height: auto;
+  margin-bottom: 7vw;
+  margin-left: 3vw;
+}
+
+#slogan {
+ font-size: 4.5vw;
+ line-height: 1.5;
+ margin-left: 5vw;
+ margin-top: -10vw;
+}
+
+#sub-description {
+  font-size: 1.75vw;
+  margin-left: 5vw;
+  line-height: 1.5;
+  width: 80%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.description-section {
+  background-color: #99CFFF;
+  color: #062745;
+}
+
+#joy-submit {
+  margin-top: 2.5vw;
+}
+
+.section-style {
+  background-color: white;
+  color: white;
+}
+/*************************************************************
+
+                          KEY-FEATURES
+
+**************************************************************/
+.key-features {
+  background-color: white;
+}
+
+.section-header {
+  font-family: 'Montserrat', sans-serif;
+  color: #062745;
+  font-weight: 600;
+  font-size: 3.5vw;
+}
+
+.header-spacing {
+  margin-top: 2vw;
+  margin-right: 65vw;
+}
+
+.number {
+  margin-bottom: -0.5vw;
+  width: 3vw;
+  height: auto;
+}
+
+.card-graphic {
+  width: 43vw;
+  height: auto;
+  margin-left: 3vw;
+}
+
+.screen-graphic {
+  width: 30vw;
+  height: auto;
+}
+
+.feature-header {
+  font-family: 'Montserrat', sans-serif;
+  color: #062745;
+  font-weight: 600;
+  font-size: 3vw;
+  margin-left: 5vw;
+  white-space: nowrap;
+}
+
+#feature-sub {
+  font-size: 1.7vw;
+  font-weight: 400;
+  margin-left: 3.8vw;
+  margin-top: 1vw;
+  white-space: normal;
+  line-height: 1.5;
+}
+
+#feature-sub-secondary {
+  margin-right: 5vw;
+  font-size: 1.7vw;
+  font-weight: 400;
+  margin-left: 3.8vw;
+  margin-top: 1vw;
+  white-space: normal;
+  line-height: 1.5;
+}
+
+.key-section-header {
+  background-color: white;
+  height: 5vw;
+  margin-left: 5vw;
+  margin-top: 5vw;
+  margin-bottom: 1vw;
+}
+
+#team-section-header {
+  background-color: #99CFFF;
+  height: 10vw;
+  margin-left: 5vw;
+  margin-bottom: 5vw;
+  padding-top: 4vw;
+}
+
+/*************************************************************
+
+                          FOOTER
+
+**************************************************************/
+.footer-content {
+  background-color: #99CFFF;
+}
+
+.team-spacing {
+  margin-top: 4vw;
+  margin-right: 60vw;
+  margin-bottom: 5vw;
+}
+
+.team-section {
+  background-color: #99CFFF;
+  color: #062745;
+}
+
+div.item {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  margin-top: -15vw;
+  height: 10vw;
+  width: auto;
+}
+
+.team-members {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 25px;
+}
+
+.caption {
+  display: block;
+  font-size: 1.5vw;
+  margin-bottom: -0.5vw;
+}
+
+#sub {
+  color: #062745;
+  font-size: 1.2vw;
+  font-weight: 500;
+  margin-bottom: -0.75vw;
+}
+
+#joys {
+  color: #062745;
+  font-size: 1vw;
+  white-space: nowrap;
+}
+
+.copyright {
+  color: #062745;
+  text-align: left;
+  font-size: 0.75vw;
+  line-height: 1.5;
+  font-weight: 500;
+  margin-left: 5vw;
+  padding-bottom: 1.5vw;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: #99CFFF;
+  padding-top: 2vw;
+}
+
+.capstone-container {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5vw;
+  padding-bottom: 1.5vw;
+}
+
+.capstone-logo {
+  padding-bottom: 1vw;
+  width: 15vw;
+  height: auto;
+}
