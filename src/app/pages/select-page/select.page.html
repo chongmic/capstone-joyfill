@@ -1,9 +1,10 @@
 <ion-content>
+  <div class="centered">
   <h2>Tell us more about yourself...</h2>
   <ion-searchbar class="search-bar" (ionInput)="getItems($event)" placeholder="Type in your joys here..."></ion-searchbar>
   
   <div class="grid-style">
-    <ion-grid>
+    <ion-grid *ngIf="searchTerm !== ''">
       <ion-row style="text-align: center">
         <div button="true" (click)="selectJoy(joy)" *ngFor="let joy of joys">
           <ion-card class="card-style">
@@ -58,5 +59,5 @@
   <ion-row justify-content-center>  
     <button size="small" color="secondary" (click)="submitJoys()">Proceed</button>
   </ion-row>
-
+  </div>
 </ion-content>

@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../../services/user.service'; 
-import { Joy } from '../../models/joy';
-import { JoyService } from '../../services/joy.service';
 import { FirestoreService } from '../../services/firestore.service';
 import { NavController } from '@ionic/angular';
+import { AngularFirestore } from '@angular/fire/firestore';
 
 @Component({
   selector: 'app-select',
@@ -12,6 +11,8 @@ import { NavController } from '@ionic/angular';
 })
 export class SelectPage implements OnInit {
 
+  public searchTerm = '';
+
   joys: any = [];
   currentJoys: any = [];
   selectedJoys: any = new Set();
@@ -19,24 +20,39 @@ export class SelectPage implements OnInit {
   constructor(
     public navCtrl: NavController,
     private userService: UserService,
-    private joyService: JoyService,
-    private firestoreService: FirestoreService
+    private firestoreService: FirestoreService,
+    private afs: AngularFirestore
   ) { }
 
   ngOnInit() {
-    this.joyService.getJoys().subscribe(joys => {
-      console.log(joys);
+    this.afs.collection('joys').valueChanges().subscribe(joys => {
       this.joys = joys;
+      this.currentJoys = joys;
+      this.searchTerm = '';
     })
   }
 
-  getItems(ev:any) {
-    const val = ev.target.value;
-    if (val && val.trim() != '') {
-      this.joys = this.joys.filter(joy => {
-        return joy.name.toLowerCase().indexOf(val.toLowerCase()) > -1;
-      });
+  initializeJoys(): void {
+    this.joys = this.currentJoys;
+  }
+
+  getItems(evt) {
+    this.initializeJoys();
+    this.searchTerm = evt.srcElement.value;
+
+    if (!this.searchTerm) {
+      return;
     }
+
+    this.joys= this.joys.filter(searchJoys => {
+      if(searchJoys.name && this.searchTerm || searchJoys.category && this.searchTerm) {
+        if(searchJoys.name.toLowerCase().indexOf(this.searchTerm.toLowerCase()) > -1 || 
+           searchJoys.category.toLowerCase().indexOf(this.searchTerm.toLowerCase()) > -1 ) {
+          return true;
+        }
+        return false;
+      }
+    });
   }
 
   selectJoy(joy) {
@@ -44,6 +60,7 @@ export class SelectPage implements OnInit {
     if (!this.selectedJoys.has(joy)) {
       this.selectedJoys.add(joy);
     }
+    console.log(this.selectedJoys);
   }
 
   setToArray(joys) {
